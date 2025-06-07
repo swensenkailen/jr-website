@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/jr-website/static/css/main.8e679c74.css",
+    "main.js": "/jr-website/static/js/main.410529a1.js",
+    "static/media/image-discography.jpeg": "/jr-website/static/media/image-discography.b4bca111279e5f5118fa.jpeg",
+    "static/media/image-store.jpeg": "/jr-website/static/media/image-store.17325bb365378fc62c5b.jpeg",
+    "static/media/image-vlog.jpeg": "/jr-website/static/media/image-vlog.c2eaf8bad21533d16d82.jpeg",
+    "static/media/image-home.jpeg": "/jr-website/static/media/image-home.f291d525663454d3d084.jpeg",
+    "static/media/image-about.jpeg": "/jr-website/static/media/image-about.85315134b821b0ea5dd0.jpeg",
+    "static/media/LatinoGothic-VariableVariable.ttf": "/jr-website/static/media/LatinoGothic-VariableVariable.80d67714104c0cf952d6.ttf",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/jr-website/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/FranklinGothicURWCondBook.ttf": "/jr-website/static/media/FranklinGothicURWCondBook.3c040c58aeb374d3e09e.ttf",
+    "static/media/fontawesome-webfont.eot": "/jr-website/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/jr-website/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/jr-website/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/jr-website/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/FranklinGothicURWCondBookItalic.ttf": "/jr-website/static/media/FranklinGothicURWCondBookItalic.1045d6f36052dc937ca5.ttf",
+    "static/media/Asset 11.svg": "/jr-website/static/media/Asset 11.d0d2521eb9cb98a6adea.svg",
+    "static/media/Asset 10.svg": "/jr-website/static/media/Asset 10.fb34907ae366d4ab82db.svg",
+    "static/media/Asset 17.svg": "/jr-website/static/media/Asset 17.667f71404a991cdd47e9.svg",
+    "static/media/Asset 15.svg": "/jr-website/static/media/Asset 15.b0d2f894f0162d99b1a4.svg",
+    "static/media/Asset 18.svg": "/jr-website/static/media/Asset 18.2e694b6186347dabb989.svg",
+    "static/media/Asset 20.svg": "/jr-website/static/media/Asset 20.f9de12a88afbe448ac0e.svg",
+    "index.html": "/jr-website/index.html",
+    "main.8e679c74.css.map": "/jr-website/static/css/main.8e679c74.css.map",
+    "main.410529a1.js.map": "/jr-website/static/js/main.410529a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e679c74.css",
+    "static/js/main.410529a1.js"
+  ]
+}
