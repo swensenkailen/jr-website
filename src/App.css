@@ -74,7 +74,7 @@
 .card {
   margin: 0 auto;
   padding: 2em;
-  width: 70%;
+  width: 90%;
   padding: 10px;
   background-color: #000000;
   color: white;
@@ -421,6 +421,16 @@ p{
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.7rem;
+}
+
+button-horizontal-wrapper {
+  margin-top: 10vu;
+}
+
+button-mailing-list {
+  background-color: var(--joyla-red);
+  color: white;
+  font: "FranklinGothicBook"
 }
 
 .contact-card {

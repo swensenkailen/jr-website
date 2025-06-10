@@ -45,12 +45,16 @@ function Home() {
               placeholder='Your Email'
             />
           </form>
-          <button>
-            Submit
-          </button>
-          <button>
-            Nah
-          </button>
+
+          <div className="button-horizontal-wrapper">
+            <button className="button-mailing-list">
+              Submit
+            </button>
+            <button className="button-mailing-list">
+              Nah
+            </button>
+
+          </div>
         </section>
       </Popup>
 
@@ -96,7 +100,7 @@ function Home() {
           <p>7/20 @ Capitol Hill Block Party - Seattle, WA</p>
         </div>
 
-        <div className="card">
+        {/* <div className="card">
           <h2>MUSIC VIDEOS</h2>
           <iframe
             width="100"
@@ -120,9 +124,9 @@ function Home() {
 
         <div className="card">
           <h2>STORE</h2>
-        </div>
+        </div> */}
 
-        <div className="card contact-card">
+        <div className="card">
           <h2>CONTACT US</h2>
           <form className="contact-form">
             <input
@@ -150,7 +154,7 @@ function Home() {
         </div>
 
 
-        <div className="card">
+        {/* <div className="card">
           <h2>Instagram feed</h2>
         </div>
 
@@ -171,8 +175,8 @@ function Home() {
             }}
           >
             <InstagramEmbed url="https://www.instagram.com/p/DJAfp-MT3gM/" />
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
 
       {showCookieBanner && (

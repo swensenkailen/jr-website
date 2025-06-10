@@ -19,9 +19,8 @@
   width: 100vw;
   height: 100px;
 
-
-  background-color: black;
-  color: #fff;
+  color: white;
+  background: linear-gradient(90deg, rgb(5, 5, 5), rgb(14, 14, 14), rgb(5, 5, 5));
 
   animation: fadeInDown 0.3s ease-in-out;
 }
