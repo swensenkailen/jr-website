@@ -1,20 +1,16 @@
 
+.background-texture {
+  width: 100%;
+  z-index: -1;
+  background: 
+    linear-gradient(to bottom, black 0%, transparent 5%, transparent 95%, black 100%),
+    url('/public/images/black-texture-vertical.jpg') center center / cover no-repeat;
+}
+
 :root {
   --joyla-red:#AD0707;
   --joyla-tan:#DCC7A7;
   --joyla-blue:#254FC5;
-}
-
-background-texture {
-    background: url('/public/images/black-painted-wall-textured-background.jpg') center center / contain no-repeat; 
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-  
-    box-sizing: border-box;
-    box-shadow: inset 0 0 60px 70px black;
 }
 
 .newsletter-popup {
@@ -25,7 +21,7 @@ background-texture {
   text-align: center;
 
   width: 100vw;
-  height: 12vh;
+  height: 17vw;
 
   color: white;
   background: radial-gradient(ellipse 45% 300%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0));
@@ -34,26 +30,28 @@ background-texture {
 }
 
 .newsletter-popup > p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: 'FranklinGothicBook';
 }
 
 .newsletter-popup-heading {
+  font-family: "FranklinGothicBook";
   margin-bottom: 8px;
-  font-size: 8px;
+  font-size: 2vw;
 }
 
 .newsletter-popup-text {
+  font-family: 'FranklinGothicBook';
   margin-bottom: 24px;
   font-size: 16px;
 }
 
 .newsletter-popup-input {
-  padding: 4px 4px;
+  font-family: 'FranklinGothicBook';
+  padding: 0.5vw 5.2vw;
   border-radius: 2px;
   outline: none;
   border: none;
-  font-size: 14px;
+  font-size: 2.5vw;
   border: 1px solid #fff;
 }
 
@@ -66,14 +64,15 @@ background-texture {
 
 .newsletter-button {
   background-color: var(--joyla-blue);
-  font: 'LatinoGothic';
+  font-family: 'FranklinGothicBook';
   color: white;
   border: none;
-  padding: 0.3rem 2.1rem;
+  padding: 1vw 5.5vw;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.5rem;
-  margin: 0.5em;
+  font-size: 1.9vw;
+  margin: 0.5vw;
+  margin-top: 0.8vw;
 }
 
 
@@ -136,34 +135,77 @@ background-texture {
   box-sizing: border-box;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 95%;
+  height: 100%;
+}
+
 .card {
   margin: 0 auto;
   padding: 2em;
-  width: 90%;
+  width: 80%;
   padding: 10px;
   background-color: #000000;
   color: white;
   margin-top: 10px;
   margin-bottom: 5px;
 
-  text-align: center;
   border-radius:10px;
-  position: relative;
+
+  box-shadow: 6px 6px 10px rgba(3, 0, 0, 0.5);
 }
 
 .show-card {
-  display: flexbox;
   column-count: 3;
-  column-width: 43%;
+  gap: 20px;           /* optional spacing between items */
   margin: 0 auto;
-  padding: 2em;
-  width: 90%;
-  padding: 10px;
-  background-color: #000000;
+  padding: 2px 1em;
+  width: 100%;
+  background-color: #000;
   color: white;
+  border-radius: 10px;
+  text-align: right;
 
-  text-align: left;
-  border-radius:10px;
+}
+
+
+.show-button {
+  background-color: var(--joyla-tan);
+  font: 'LatinoGothic';
+  color: black;
+  border: none;
+  padding: 0.3rem 1.0rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2vw;
+  text-align: right;
+  text-wrap-mode:nowrap;
+
+  transition: linear 0.2s;
+
+}
+
+.show-button:hover {
+  background-color: white;
+  transition: linear 0.2s;
+
+
+}
+
+.show-button-container {
+  text-align: right;
+
 }
 
 .music-card {
@@ -175,11 +217,51 @@ background-texture {
 
 }
 
+.music-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide button by default */
+.music-button-container {
+  position: absolute;
+  translate: 10vw -17vw;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Show button when hovering over image area */
+.music-container:hover .music-button-container {
+  opacity: 1;
+
+}
+
+.music-button {
+  width: 15vw;
+  height: 4vw;
+  background-color: var(--white); /* Fix: use two dashes and variable name */
+  font-family: 'LatinoGothic'; /* Fix: use font-family */
+  color: white;
+  border: none;
+  padding: 0.1rem 1.0rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+.music-button:hover {
+  background-color: var(--joyla-tan);
+  transition: linear 0.5s;
+}
+
+
+
 .card-title {
 
-  background-color: #000000;
   color: white;
-  margin-top: 25px;
+  margin-top: 7vw;
+  margin-bottom: 3vw;
 
   text-align: center;
   border-radius:10px;
@@ -198,8 +280,7 @@ background-texture {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background: red; */
-  background-color: var(--joyla-red);
+
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -213,8 +294,8 @@ background-texture {
   filter: blur(0.2rem);
 } 
 
-.home-header-image{
-
+.home-header-image {
+  position: relative; /* Needed for absolutely positioned video */
   background: url('/public/images/home_promo_banner.jpg') center center / cover no-repeat;
   color: white;
   width: 100%;
@@ -223,10 +304,31 @@ background-texture {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   box-sizing: border-box;
   box-shadow: inset 0px 0px 30px 30px black;
+  overflow: hidden;
+  filter:brightness(1.2);
 }
+
+.header-overlay-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.2; /* optional: control video visibility */
+  filter:brightness(1.3);
+}
+
+/* Make sure overlay text stays above the video */
+.home-header-image h1 {
+  z-index: 1;
+  position: relative;
+}
+
 
 .biography-header-image{
 
@@ -245,27 +347,31 @@ background-texture {
 .music-cover-doctor {
 
   background: url('/public/images/doctor_cover.jpg') center center / cover no-repeat;
-  width: 40vw;
-  height: 40vw;
+  width: 100%;
+  height: 32.5vw;
+  transition: linear 0.2s;
 
 }
 
 .music-cover-doctor:hover {
   filter: blur(0.2em) brightness(0.8);
+  transition: linear 0.2s;
 }
 
 .music-cover-highandlow {
 
   background: url('/public/images/high_and_low_cover.jpg') center center / cover no-repeat;
-  width: 40vw;
-  height: 40vw;
+  width: 100%;
+  height: 32.5vw;
+  transition: linear 0.2s;
   
-  }
+}
 
-  .music-cover-highandlow:hover {
-    filter: blur(0.2em) brightness(0.8);
-  }
+.music-cover-highandlow:hover {
+  filter: blur(0.2em) brightness(0.8);
+  transition: linear 0.2s;
 
+}
 
 .discography-header-image{
 
@@ -370,17 +476,22 @@ background-texture {
 h1{
   font-family: 'LatinoGothic',sans-serif;
   letter-spacing: 0.1em;
+  font-size: 2.4vw;
+
 }
 
 h2{
   font-family: 'LatinoGothic', sans-serif;
   letter-spacing: 0.1em;
+  font-size: 3.2vw;
+
 }
 
 p{
   font-family: 'FranklinGothicBook', sans-serif;
   letter-spacing: 0.05em;
-  font-size: 2.5vw;
+  font-size: 2.4vw;
+  text-wrap-mode: nowrap;
 }
 
 
@@ -436,9 +547,6 @@ p{
   overflow: hidden; /* Prevent overlay overflow */
   z-index: 1;
 
-  background: 
-    linear-gradient(to bottom, black 0%, transparent 20%, transparent 80%, black 100%),
-    url('/public/images/black-texture-vertical3.jpg') center center / cover no-repeat;
 }
 
 
@@ -458,22 +566,6 @@ p{
   text-align: center;
 }
 
-
-
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-    overflow: hidden;
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .sign-up {
   background-position: center;
@@ -542,32 +634,23 @@ p{
 }
 
 .cookie-popup-content p {
+  font-family: 'FranklinGothicBook';
   margin: 0 0 0.8rem 0;
-  font-size: 0.8rem;
+  font-size: 2vw;
 }
 
 .cookie-popup-content button {
   background-color: var(--joyla-blue);
-  font: 'LatinoGothic';
+  font-family: 'FranklinGothicBook';
   color: white;
   border: none;
   padding: 0.3rem 3.0rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.7rem;
+  font-size: 2vw;
 }
 
-.show-button {
-  background-color: var(--joyla-tan);
-  font: 'LatinoGothic';
-  color: black;
-  border: none;
-  padding: 0.3rem 1.0rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.6rem;
 
-}
 
 button-horizontal-wrapper {
   margin-top: 10vu;
@@ -581,12 +664,11 @@ button-mailing-list {
 
 .contact-card {
   background-color: black;
-  border: 2px solid var(--joyla-red);
   padding: 2rem;
   border-radius: 12px;
   max-width: 600px;
   margin: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
 }
 
 

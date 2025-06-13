@@ -1,7 +1,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 80vw;
   margin: 0 auto;
   gap: 0.5rem; /* space between form elements */
   padding: 2rem;
@@ -17,33 +17,39 @@
 
 .contact-form input,
 .contact-form textarea {
-  background-color: #333;
+  font-family: 'FranklinGothicBook';
+  background-color: #242424;
   border: 1px solid #555;
   border-radius: 7px;
-  padding: 0.35rem;
+  padding: 0.25rem;
   color: white;
-  font-size: 1rem;
+  font-size: 3vw;
   width: 100%;
   box-sizing: border-box;
   resize: none;
 }
 
 .contact-form textarea {
-  height: 90px;
+  height: 12vw;
 }
 
 .submit-contact-form-button {
+  font-family: 'FranklinGothicBook';
   align-self: flex-end;
-  padding: 0.75rem 1.5rem;
-  background-color: #555;
+  padding: 0.35rem 1.5rem;
+  background-color: #242424;
   color: white;
-  border: none;
+  border: 1px solid black;
+
   border-radius: 7px;
-  font-size: 1rem;
+  width: 100%;
+  font-size: 3vw;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .submit-contact-form-button:hover {
-  background-color: #a52121;
+  border: 1px solid var(--joyla-red);
+  transition: 0.3s ease;
+
 }

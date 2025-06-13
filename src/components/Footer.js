@@ -13,14 +13,14 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
 
-          <Link to="/" className='footer-logo' /> 
+          <div className='footer-logo' /> 
 
-          <small className='website-rights'>Joyla Red © 2025</small>
+          <p className='website-rights'>Joyla Red © 2025. All rights reserved.</p>
           
           <div class='social-icons'>
             <a
               class='social-icon-link facebook'
-              href='/'
+              href='https://www.facebook.com/joylared'
               target='_blank'
               aria-label='Facebook'
             >
@@ -28,7 +28,7 @@ function Footer() {
             </a>
             <a
               class='social-icon-link instagram'
-              href='/'
+              href='https://www.instagram.com/joylared'
               target='_blank'
               aria-label='Instagram'
             >
@@ -36,7 +36,7 @@ function Footer() {
             </a>
             <a
               class='social-icon-link youtube'
-              href='/'
+              href='https://www.youtube.com/@joylared'
               target='_blank'
               aria-label='Youtube'
             >
@@ -44,7 +44,7 @@ function Footer() {
             </a>
             <a
               class='social-icon-link spotify'
-              href='/'
+              href='https://open.spotify.com/artist/3ozsPuRX2eY5Hvgzvrfjph'
               target='_blank'
               rel="noopener noreferrer"
               aria-label='Spotify'
@@ -53,11 +53,12 @@ function Footer() {
             </a>
             <a
               class='social-icon-link tiktok'
-              href='/'
+              href='https://www.tiktok.com/@joylared'
               target='_blank'
               aria-label='TikTok'
             >
-              <i class='fa fa-bandcamp' />
+              <div className='tiktok-icon'></div>
+
             </a>
           </div>
         </div>

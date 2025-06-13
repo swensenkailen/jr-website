@@ -1,7 +1,7 @@
 .footer-container {
   /* background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(12, 12, 12) 100%); */
   background: black;
-  padding: 2rem 0 2rem 0;
+  padding: 0 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,11 +61,13 @@
 /* Social Icons */
 .social-icon-link {
   color: #fff;
-  font-size: 24px;
+  font-size: 5vw;
+
+  
 }
 
 .social-icon-link:hover {
-  height:25px;
+  height:5vw;
 
   transition: all 1.3s ease-out;
 
@@ -89,8 +91,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
-  margin-top: 16px;
+  width: 40vw;
+  margin-top: 4vw;
+
+  transition: 0.3s ease;
+
 }
 
 .footer-logo {
@@ -99,11 +104,11 @@
   background-repeat: no-repeat;
   background-position: center;
   
-  height: 60px;
-  width: 60px;
+  height: 13vw;
+  width: 13vw;
   
   display: block;
-  margin: 10px auto;
+  margin-bottom: 3vw;
 
   transition: ease-in-out 0.3s
 }
@@ -143,8 +148,8 @@
 
 .website-rights {
   color: #ffffffa1;
-  margin-bottom: 0px;
-  font-size: 8px;
+  margin-bottom: 1.5vw;
+  font-size: 1.5vw;
   font-weight: lighter;
 }
 
@@ -174,3 +179,18 @@
   }
 }
 
+.tiktok-icon {
+  background-image: url('/public/images/tiktok-white-icon.png');
+  height: 5.5vw;
+  width: 4.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  translate: -0.4vw;
+}
+
+.tiktok-icon:hover {
+  height:5.5vw;
+
+  transition: 0.1s ease-out;
+}
