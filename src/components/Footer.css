@@ -9,46 +9,6 @@
 
 }
 
-.footer-subscription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  width: 100vw;
-  height: 100px;
-
-  color: white;
-  background: linear-gradient(90deg, rgb(5, 5, 5), rgb(14, 14, 14), rgb(5, 5, 5));
-
-  animation: fadeInDown 0.3s ease-in-out;
-}
-
-.footer-subscription > p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
-
-.footer-subscription-heading {
-  margin-bottom: 8px;
-  font-size: 8px;
-}
-
-.footer-subscription-text {
-  margin-bottom: 24px;
-  font-size: 20px;
-}
-
-.footer-input {
-  padding: 4px 10px;
-  border-radius: 2px;
-  margin-right: 10px;
-  outline: none;
-  border: none;
-  font-size: 14px;
-  border: 1px solid #fff;
-}
 
 .footer-links {
   width: 100%;
@@ -139,8 +99,8 @@
   background-repeat: no-repeat;
   background-position: center;
   
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   
   display: block;
   margin: 10px auto;

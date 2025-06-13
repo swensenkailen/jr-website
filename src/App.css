@@ -1,16 +1,81 @@
 
-* {
+:root {
+  --joyla-red:#AD0707;
+  --joyla-tan:#DCC7A7;
+  --joyla-blue:#254FC5;
+}
+
+background-texture {
+    background: url('/public/images/black-painted-wall-textured-background.jpg') center center / contain no-repeat; 
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+  
+    box-sizing: border-box;
+    box-shadow: inset 0 0 60px 70px black;
+}
+
+.newsletter-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 100vw;
+  height: 12vh;
+
+  color: white;
+  background: radial-gradient(ellipse 45% 300%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0));
+
+  animation: fadeInDown 0.3s ease-in-out;
+}
+
+.newsletter-popup > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.newsletter-popup-heading {
+  margin-bottom: 8px;
+  font-size: 8px;
+}
+
+.newsletter-popup-text {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.newsletter-popup-input {
+  padding: 4px 4px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
 }
 
-:root {
-  --joyla-red:#AD0707;
-  --joyla-tan:#DCC7A7;
-  --joyla-blue:#254FC5;
+.newsletter-button {
+  background-color: var(--joyla-blue);
+  font: 'LatinoGothic';
+  color: white;
+  border: none;
+  padding: 0.3rem 2.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.5rem;
+  margin: 0.5em;
 }
+
 
 
 .home,
@@ -78,7 +143,43 @@
   padding: 10px;
   background-color: #000000;
   color: white;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  text-align: center;
+  border-radius:10px;
+  position: relative;
+}
+
+.show-card {
+  display: flexbox;
+  column-count: 3;
+  column-width: 43%;
+  margin: 0 auto;
+  padding: 2em;
+  width: 90%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+
+  text-align: left;
+  border-radius:10px;
+}
+
+.music-card {
+  display: grid; /* Set the container as a grid */
+  grid-template-columns: 1fr 1fr; /* Create two columns of equal width */
+  gap: 20px; /* Add a gap between columns (optional) */
+  background-color: #000000;
+  color: white;
+
+}
+
+.card-title {
+
+  background-color: #000000;
+  color: white;
+  margin-top: 25px;
 
   text-align: center;
   border-radius:10px;
@@ -98,7 +199,7 @@
   width: 100%;
   height: 100%;
   /* background: red; */
-  background-image: conic-gradient(from var(--angle), var(--joyla-red), rgb(59, 16, 16), rgb(37, 9, 9), rgb(107, 19, 19), rgb(80, 34, 34), rgb(68, 4, 4));
+  background-color: var(--joyla-red);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -107,24 +208,25 @@
   padding: 1px;
   border-radius: 10px;
 
-  animation: 6s spin linear infinite;
+  /* transform: translate(0.5%, 0.5%); */
+
+  filter: blur(0.2rem);
 } 
 
-.card:hover::after {
-  filter: blur(1.4rem);
-  opacity: 0.4;
+.home-header-image{
+
+  background: url('/public/images/home_promo_banner.jpg') center center / cover no-repeat;
+  color: white;
+  width: 100%;
+  height: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 30px 30px black;
 }
-
-@keyframes spin {
-  from{
-    --angle: 0deg;
-  }
-  to{
-    --angle: 360deg;
-  }
-}
-
-
 
 .biography-header-image{
 
@@ -139,6 +241,31 @@
   box-sizing: border-box;
   box-shadow: inset 0 0 100px 90px black;
 }
+
+.music-cover-doctor {
+
+  background: url('/public/images/doctor_cover.jpg') center center / cover no-repeat;
+  width: 40vw;
+  height: 40vw;
+
+}
+
+.music-cover-doctor:hover {
+  filter: blur(0.2em) brightness(0.8);
+}
+
+.music-cover-highandlow {
+
+  background: url('/public/images/high_and_low_cover.jpg') center center / cover no-repeat;
+  width: 40vw;
+  height: 40vw;
+  
+  }
+
+  .music-cover-highandlow:hover {
+    filter: blur(0.2em) brightness(0.8);
+  }
+
 
 .discography-header-image{
 
@@ -252,7 +379,8 @@ h2{
 
 p{
   font-family: 'FranklinGothicBook', sans-serif;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  font-size: 2.5vw;
 }
 
 
@@ -296,16 +424,21 @@ p{
   box-shadow: inset 0 0 100px 90px black;
 }
 
-.main-content-container{
-  background-color:#000000;
+
+
+.main-content-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
-  z-index: -1;
+  overflow: hidden; /* Prevent overlay overflow */
+  z-index: 1;
 
+  background: 
+    linear-gradient(to bottom, black 0%, transparent 20%, transparent 80%, black 100%),
+    url('/public/images/black-texture-vertical3.jpg') center center / cover no-repeat;
 }
 
 
@@ -389,7 +522,7 @@ p{
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(90deg, rgb(5, 5, 5), rgb(14, 14, 14), rgb(5, 5, 5));
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
@@ -398,14 +531,14 @@ p{
 }
 
 .cookie-popup-content {
-  background-color: black;
+
   color: white;
   padding: 0.8rem 2rem;
   border-radius: 10px 10px 0 0;
   max-width: 700px;
   width: 90%;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
+  text-align: center
 }
 
 .cookie-popup-content p {
@@ -415,12 +548,25 @@ p{
 
 .cookie-popup-content button {
   background-color: var(--joyla-blue);
+  font: 'LatinoGothic';
   color: white;
   border: none;
   padding: 0.3rem 3.0rem;
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.7rem;
+}
+
+.show-button {
+  background-color: var(--joyla-tan);
+  font: 'LatinoGothic';
+  color: black;
+  border: none;
+  padding: 0.3rem 1.0rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.6rem;
+
 }
 
 button-horizontal-wrapper {
@@ -443,44 +589,7 @@ button-mailing-list {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
-.contact-input,
-.contact-textarea {
-  padding: 0.75rem 1rem;
-  border: 1px solid black;
-  border-radius: 6px;
-  font-size: 1rem;
-  background-color: var(--joyla-tan);
-  color: black;
-  transition: border 0.3s ease;
-}
-
-.contact-input:focus,
-.contact-textarea:focus {
-  border: 2px solid var(--joyla-red);
-  outline: none;
-}
-
-.submit-contact-form-button {
-  padding: 0.75rem 1.25rem;
-  background-color: var(--joyla-red);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-contact-form-button:hover {
-  background-color: blue;
-}
 
 @keyframes fadeInUp {
   from {
