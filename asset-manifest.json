@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jr-website/static/css/main.b93f32c9.css",
-    "main.js": "/jr-website/static/js/main.d6b167a9.js",
+    "main.css": "/jr-website/static/css/main.2df8261f.css",
+    "main.js": "/jr-website/static/js/main.14cf98b3.js",
     "static/media/image-discography.jpeg": "/jr-website/static/media/image-discography.b4bca111279e5f5118fa.jpeg",
     "static/media/image-store.jpeg": "/jr-website/static/media/image-store.17325bb365378fc62c5b.jpeg",
     "static/media/image-vlog.jpeg": "/jr-website/static/media/image-vlog.c2eaf8bad21533d16d82.jpeg",
@@ -26,11 +26,11 @@
     "static/media/Asset 18.svg": "/jr-website/static/media/Asset 18.2e694b6186347dabb989.svg",
     "static/media/Asset 20.svg": "/jr-website/static/media/Asset 20.f9de12a88afbe448ac0e.svg",
     "index.html": "/jr-website/index.html",
-    "main.b93f32c9.css.map": "/jr-website/static/css/main.b93f32c9.css.map",
-    "main.d6b167a9.js.map": "/jr-website/static/js/main.d6b167a9.js.map"
+    "main.2df8261f.css.map": "/jr-website/static/css/main.2df8261f.css.map",
+    "main.14cf98b3.js.map": "/jr-website/static/js/main.14cf98b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b93f32c9.css",
-    "static/js/main.d6b167a9.js"
+    "static/css/main.2df8261f.css",
+    "static/js/main.14cf98b3.js"
   ]
 }
