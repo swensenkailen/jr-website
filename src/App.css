@@ -21,10 +21,12 @@
   text-align: center;
 
   width: 100vw;
-  height: 17vw;
+  height: 9rem;
 
   color: white;
   background: radial-gradient(ellipse 45% 300%, rgb(0, 0, 0) 35%, rgba(0, 0, 0, 0));
+
+  translate: 0rem calc(-10rem + 16vw);
 
   animation: fadeInDown 0.3s ease-in-out;
 }
@@ -36,22 +38,23 @@
 .newsletter-popup-heading {
   font-family: "FranklinGothicBook";
   margin-bottom: 8px;
-  font-size: 2vw;
+  font-size: 0.95rem;
 }
 
-.newsletter-popup-text {
-  font-family: 'FranklinGothicBook';
-  margin-bottom: 24px;
-  font-size: 16px;
+@media (max-width: 480px) {
+  .newsletter-popup-heading {
+    font-size: 0.65rem;
+  }
 }
+
 
 .newsletter-popup-input {
   font-family: 'FranklinGothicBook';
-  padding: 0.5vw 5.2vw;
+  padding: 0.1rem 1.6rem;
   border-radius: 2px;
   outline: none;
   border: none;
-  font-size: 2.5vw;
+  font-size: 1.35rem;
   border: 1px solid #fff;
 }
 
@@ -67,10 +70,10 @@
   font-family: 'FranklinGothicBook';
   color: white;
   border: none;
-  padding: 1vw 5.5vw;
+  padding: 0.1rem 2.0rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.9vw;
+  font-size: 1.35rem;
   margin: 0.5vw;
   margin-top: 0.8vw;
 }
@@ -154,12 +157,14 @@
 .card {
   margin: 0 auto;
   padding: 2em;
-  width: 80%;
+  width: calc(10rem + 45vw);
+
   padding: 10px;
   background-color: #000000;
   color: white;
   margin-top: 10px;
   margin-bottom: 5px;
+  height: 100%;
 
   border-radius:10px;
 
@@ -168,10 +173,11 @@
 
 .show-card {
   column-count: 3;
-  gap: 20px;           /* optional spacing between items */
+  gap: 5vw;           /* optional spacing between items */
   margin: 0 auto;
   padding: 2px 1em;
   width: 100%;
+
   background-color: #000;
   color: white;
   border-radius: 10px;
@@ -209,9 +215,10 @@
 }
 
 .music-card {
+  margin: 1.2vw;
   display: grid; /* Set the container as a grid */
   grid-template-columns: 1fr 1fr; /* Create two columns of equal width */
-  gap: 20px; /* Add a gap between columns (optional) */
+  gap: calc(1rem + 0.5vw); /* Add a gap between columns (optional) */
   background-color: #000000;
   color: white;
 
@@ -224,11 +231,12 @@
 
 /* Hide button by default */
 .music-button-container {
-  position: absolute;
-  translate: 10vw -17vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  translate: -8vw calc(-1.5rem - 12vw);
+
   opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
 }
 
 /* Show button when hovering over image area */
@@ -238,6 +246,7 @@
 }
 
 .music-button {
+  position: absolute;
   width: 15vw;
   height: 4vw;
   background-color: var(--white); /* Fix: use two dashes and variable name */
@@ -255,7 +264,9 @@
   transition: linear 0.5s;
 }
 
-
+#shows, #music, #videos, #contact {
+  scroll-margin-top: 10vw;
+}
 
 .card-title {
 
@@ -330,7 +341,7 @@
 }
 
 
-.biography-header-image{
+/* .biography-header-image{
 
   background: url('/public/images/image-about.jpeg') center center / cover no-repeat;
   color: white;
@@ -342,13 +353,13 @@
 
   box-sizing: border-box;
   box-shadow: inset 0 0 100px 90px black;
-}
+} */
 
 .music-cover-doctor {
 
   background: url('/public/images/doctor_cover.jpg') center center / cover no-repeat;
-  width: 100%;
-  height: 32.5vw;
+  width: calc((8rem + 40vw)/2);
+  height: calc((8rem + 40vw)/2);
   transition: linear 0.2s;
 
 }
@@ -361,8 +372,8 @@
 .music-cover-highandlow {
 
   background: url('/public/images/high_and_low_cover.jpg') center center / cover no-repeat;
-  width: 100%;
-  height: 32.5vw;
+  width: calc((8rem + 40vw)/2);
+  height: calc((8rem + 40vw)/2);
   transition: linear 0.2s;
   
 }
@@ -373,7 +384,7 @@
 
 }
 
-.discography-header-image{
+/* .discography-header-image{
 
   background: url('/public/images/image-discography.jpeg') center center / cover no-repeat;
   color: white;
@@ -414,18 +425,18 @@
   height: 120px;
   margin-top: 20px;
 
-  display: flex; /* change from 'columns' to 'flex' for better control */
+  display: flex;  
   flex-direction: row;
-  gap: 20px; /* spacing between thumbnail and description */
+  gap: 20px;  
   padding: 10px;
   box-sizing: border-box;
-}
+} 
 
 .thumbnail {
   font-family: "Barrio", serif;
   font-weight: 400;
   font-style: normal;
-  flex: 1; /* take up half the space */
+  flex: 1; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -445,11 +456,11 @@
   font-family: "Barrio", serif;
   font-weight: 400;
   font-style: normal;
-  flex: 2; /* take up more space for text */
+  flex: 2; 
   display: flex-;
   flex-direction: column;
   justify-content: left;
-}
+} */
 
 /* FONTS FROM BRAND GUIDE */
 @font-face {
@@ -490,38 +501,12 @@ h2{
 p{
   font-family: 'FranklinGothicBook', sans-serif;
   letter-spacing: 0.05em;
-  font-size: 2.4vw;
+  font-size: calc(0.2rem + 1.7vw);
   text-wrap-mode: nowrap;
 }
 
 
-
-.spicy-rice-regular {
-  font-family: "Spicy Rice", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.barrio-regular {
-  font-family: "Barrio", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.barriecito-regular {
-  font-family: "Barriecito", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.major-mono-display-regular {
-  font-family: "Major Mono Display", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.store-header-image{
+/* .store-header-image{
 
   background: url('/public/images/image-store.jpeg') center center / cover no-repeat;
   color: white;
@@ -533,7 +518,7 @@ p{
 
   box-sizing: border-box;
   box-shadow: inset 0 0 100px 90px black;
-}
+} */
 
 
 
@@ -544,11 +529,10 @@ p{
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden; /* Prevent overlay overflow */
+  overflow: hidden; 
   z-index: 1;
 
 }
-
 
 .biography-text {
   background-color: #000000;
@@ -566,7 +550,6 @@ p{
   text-align: center;
 }
 
-
 .sign-up {
   background-position: center;
   background-size: cover;
@@ -582,7 +565,7 @@ p{
   max-width: 100%
 }
 
-.vignette {
+/* .vignette {
   width: 400px;
   height: 300px;
   background-image: url('/public/images/image-home.jpeg');
@@ -591,7 +574,7 @@ p{
   padding: 150px 200px;
   box-sizing: border-box;
   box-shadow: inset 0 0 70px 50px rgb(24, 24, 24);
-}
+} */
 
 .banner
 {
@@ -612,7 +595,7 @@ p{
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   background: linear-gradient(90deg, rgb(5, 5, 5), rgb(14, 14, 14), rgb(5, 5, 5));
   backdrop-filter: blur(5px);
@@ -627,8 +610,8 @@ p{
   color: white;
   padding: 0.8rem 2rem;
   border-radius: 10px 10px 0 0;
-  max-width: 700px;
-  width: 90%;
+  max-width: 90vw;
+  width: 90vw;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
   text-align: center
 }
@@ -636,7 +619,7 @@ p{
 .cookie-popup-content p {
   font-family: 'FranklinGothicBook';
   margin: 0 0 0.8rem 0;
-  font-size: 2vw;
+  font-size: 0.7rem;
 }
 
 .cookie-popup-content button {
@@ -644,10 +627,11 @@ p{
   font-family: 'FranklinGothicBook';
   color: white;
   border: none;
-  padding: 0.3rem 3.0rem;
+  padding: 0.05rem 3.0rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 2vw;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
 }
 
 

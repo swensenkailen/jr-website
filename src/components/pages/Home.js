@@ -16,14 +16,13 @@ function Home() {
   useEffect(() => {
     const hasVisited = Cookies.get('visited');
     const hasConsented = Cookies.get('cookieConsent');
-
+  
     if (!hasVisited) {
-      setShowPopup(true);
-      Cookies.set('visited', 'true', { expires: 7 });
+      setShowPopup(true); // Only show popup if not visited
     }
-
+  
     if (!hasConsented) {
-      setShowCookieBanner(true);
+      setShowCookieBanner(true); // Show cookie banner separately
     }
   }, []);
 
@@ -58,7 +57,11 @@ function Home() {
 
   return (
     <>
+
+      <div id='home' style={{translate: '0 -10rem'}}></div>
+
       {/* Auto Popup */}
+      
       <Popup open={showPopup} modal onClose={() => setShowPopup(false)}>
         <section className='newsletter-popup'>
           <p className='newsletter-popup-heading'>
@@ -102,12 +105,13 @@ function Home() {
           muted
           playsInline
         />
-
       </div>
 
       <div className='main-content-container'>
         <div className='background-texture'>
-          <div className='card-title' style={{ marginTop: '50px' }}>
+
+          <div id='shows' style={{translate: '0 -10rem'}} ></div>
+          <div className='card-title' id='shows' style={{ marginTop: '50px' }}>
             <h2>SHOWS</h2>
           </div>
 
@@ -115,7 +119,7 @@ function Home() {
 
             <div className='show-card'>
               <p style={{ textAlign: 'left' }}>June 14, 2025</p>
-              <p style={{ textAlign: 'left' }}>Tractor Tavern <br/> <p style={{ fontStyle: 'italic', fontSize: '1.8vw', color: '#BABABA'}}> Seattle, WA </p> </p>
+              <p style={{ textAlign: 'left' }}>Tractor Tavern <br/> <p style={{ fontStyle: 'italic',  color: '#BABABA'}}> Seattle, WA </p> </p>
               <a
                 href='https://www.ticketweb.com/event/balcony-bridge-w-joyla-red-tractor-tickets/14380603?pl=bk&REFID=subtcal&REFERRAL_ID=tmfeedbuyat253185&wt.mc_id=aff_BUYAT_253185&camefrom=CFC_BUYAT_253185&irgwc=1&clickid=UYA2gvRbSxyKRCFW6Ixm8QQdUksWL421MxZYUw0&impradid=253185&utm_source=253185-DoStuff%20Media&impradname=DoStuff%20Media&utm_medium=affiliate&ircid=4272'
                 target='_blank'
@@ -129,7 +133,7 @@ function Home() {
 
             <div className='show-card'>
               <p style={{ textAlign: 'left' }}>June 21, 2025</p>
-              <p style={{ textAlign: 'left' }}>Fremont Fair <br/> <p style={{ fontStyle: 'italic', fontSize: '1.8vw', color: '#BABABA'}}> Seattle, WA </p> </p>
+              <p style={{ textAlign: 'left' }}>Fremont Fair <br/> <p style={{ fontStyle: 'italic',  color: '#BABABA'}}> Seattle, WA </p> </p>
               <a href='https://fremontfair.com/music/'>
                 <button className='show-button'>
                   <p style={{ fontWeight: 'bold' }}>FESTIVAL INFO</p>
@@ -139,7 +143,7 @@ function Home() {
 
             <div className='show-card'>
               <p style={{ textAlign: 'left' }}>July 20, 2025</p>
-              <p style={{ textAlign: 'left' }}>Capitol Hill Block Party <br/> <p style={{ fontStyle: 'italic', fontSize: '1.8vw', color: '#BABABA'}}> Seattle, WA </p> </p>
+              <p style={{ textAlign: 'left' }}>Capitol Hill Block Party <br/> <p style={{ fontStyle: 'italic',  color: '#BABABA'}}> Seattle, WA </p> </p>
               <div className='button-container'>
                 <a href='https://www.capitolhillblockparty.com/tickets#'>
                   <button className='show-button'>
@@ -151,7 +155,7 @@ function Home() {
 
             <div className='show-card'>
               <p style={{ textAlign: 'left' }}>July 26, 2025</p>
-              <p style={{ textAlign: 'left' }}>Bite Of Seattle <br/> <p style={{ fontStyle: 'italic', fontSize: '1.8vw', color: '#BABABA'}}> Seattle, WA </p> </p>
+              <p style={{ textAlign: 'left' }}>Bite Of Seattle <br/> <p style={{ fontStyle: 'italic',  color: '#BABABA'}}> Seattle, WA </p> </p>
               <div className='button-container'>
                 <a href='https://biteofseattle.com/music-lineup/'>
                   <button className='show-button'>
@@ -162,6 +166,7 @@ function Home() {
             </div>
           </div>
 
+          <div id='music' style={{translate: '0 -5rem'}}></div>
           <div className='card-title'>
             <h2>MUSIC</h2>
           </div>
@@ -171,9 +176,11 @@ function Home() {
               <div className='music-container'>
                 <div className='music-cover-doctor'></div>
                 <div className='music-button-container'>
-                  <button className='music-button'>
-                    <p style={{ fontWeight: 'bold' }}>PRESAVE</p>
-                  </button>
+                <a href='https://distrokid.com/hyperfollow/joylared/doctor-can-you-fix-me'>
+                    <button className='music-button'>
+                      <p style={{ fontWeight: 'bold' }}>PRESAVE</p>
+                    </button>
+                  </a>
                 </div>
                 <p style={{ textAlign: 'left', fontStyle: 'italic', marginTop: '4px' }}>
                   Doctor (Can You Fix Me?)
@@ -197,6 +204,7 @@ function Home() {
             </div>
           </div>
 
+          <div id='videos' style={{translate: '0 -5rem'}}></div>
           <div className='card-title'>
             <h2>VIDEOS</h2>
           </div>
@@ -212,8 +220,11 @@ function Home() {
                 referrerPolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
+
           </div>
 
+
+          <div id='contact' style={{translate: '0 -5rem'}}></div>
           <div className='card-title'>
             <h2>CONTACT US</h2>
           </div>
@@ -222,7 +233,7 @@ function Home() {
         </div>
       </div>
 
-      {showCookieBanner && (
+      {/* {showCookieBanner && (
         <div className='cookie-popup'>
           <div className='cookie-popup-content'>
             <p>
@@ -231,7 +242,7 @@ function Home() {
             <button onClick={handleCookieConsent}>Got it</button>
           </div>
         </div>
-      )}
+      )} */}
 
       <Footer />
     </>
