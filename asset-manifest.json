@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4a620e5.css",
-    "main.js": "/static/js/main.3aea8a40.js",
-    "static/media/home_promo_banner.jpg": "/static/media/home_promo_banner.0ffc4b0ec021011d374f.jpg",
+    "main.css": "/static/css/main.53f99228.css",
+    "main.js": "/static/js/main.b116ec6c.js",
+    "static/media/home_promo_banner.jpg": "/static/media/home_promo_banner.47d0d5372b257e838436.jpg",
+    "static/media/doctor_cover.jpg": "/static/media/doctor_cover.47eb6136ec391429e729.jpg",
     "static/media/black-texture-vertical.jpg": "/static/media/black-texture-vertical.57ea6ca199557a4ea8b4.jpg",
     "static/media/old_film_texture.mp4": "/static/media/old_film_texture.05d500eb6906eb5944ee.mp4",
     "static/media/LatinoGothic-VariableVariable.ttf": "/static/media/LatinoGothic-VariableVariable.80d67714104c0cf952d6.ttf",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/doctor_cover.jpg": "/static/media/doctor_cover.ba74f94f77ee24cec4db.jpg",
     "static/media/FranklinGothicURWCondBook.ttf": "/static/media/FranklinGothicURWCondBook.3c040c58aeb374d3e09e.ttf",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -19,11 +19,11 @@
     "static/media/Asset 7.svg": "/static/media/Asset 7.76a82b886061cacee6fa.svg",
     "static/media/Asset 17.svg": "/static/media/Asset 17.667f71404a991cdd47e9.svg",
     "index.html": "/index.html",
-    "main.b4a620e5.css.map": "/static/css/main.b4a620e5.css.map",
-    "main.3aea8a40.js.map": "/static/js/main.3aea8a40.js.map"
+    "main.53f99228.css.map": "/static/css/main.53f99228.css.map",
+    "main.b116ec6c.js.map": "/static/js/main.b116ec6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4a620e5.css",
-    "static/js/main.3aea8a40.js"
+    "static/css/main.53f99228.css",
+    "static/js/main.b116ec6c.js"
   ]
 }
