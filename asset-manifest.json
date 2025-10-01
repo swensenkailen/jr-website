@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.262cbace.css",
-    "main.js": "/static/js/main.3f134498.js",
+    "main.css": "/static/css/main.1be078ee.css",
+    "main.js": "/static/js/main.265e73d8.js",
     "static/media/nightclubs_cover.png": "/static/media/nightclubs_cover.7b1d9c06df208ee06440.png",
+    "static/media/doctor_cover.png": "/static/media/doctor_cover.29506e1a4662d21f72ea.png",
+    "static/media/JoylaRed-PressPhoto-WebsiteHeader1.jpg": "/static/media/JoylaRed-PressPhoto-WebsiteHeader1.fc3fb28514abdeb51d94.jpg",
     "static/media/into_the_fade_cover.png": "/static/media/into_the_fade_cover.50fa447b2cc8f02f69b4.png",
-    "static/media/doctor_cover.jpg": "/static/media/doctor_cover.47eb6136ec391429e729.jpg",
     "static/media/black-texture-vertical.jpg": "/static/media/black-texture-vertical.57ea6ca199557a4ea8b4.jpg",
     "static/media/old_film_texture.mp4": "/static/media/old_film_texture.05d500eb6906eb5944ee.mp4",
-    "static/media/home_promo_banner.png": "/static/media/home_promo_banner.7860ccb76abb7b1e6783.png",
     "static/media/LatinoGothic-VariableVariable.ttf": "/static/media/LatinoGothic-VariableVariable.80d67714104c0cf952d6.ttf",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/FranklinGothicURWCondBook.ttf": "/static/media/FranklinGothicURWCondBook.3c040c58aeb374d3e09e.ttf",
@@ -21,11 +21,11 @@
     "static/media/Asset 7.svg": "/static/media/Asset 7.76a82b886061cacee6fa.svg",
     "static/media/Asset 17.svg": "/static/media/Asset 17.667f71404a991cdd47e9.svg",
     "index.html": "/index.html",
-    "main.262cbace.css.map": "/static/css/main.262cbace.css.map",
-    "main.3f134498.js.map": "/static/js/main.3f134498.js.map"
+    "main.1be078ee.css.map": "/static/css/main.1be078ee.css.map",
+    "main.265e73d8.js.map": "/static/js/main.265e73d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.262cbace.css",
-    "static/js/main.3f134498.js"
+    "static/css/main.1be078ee.css",
+    "static/js/main.265e73d8.js"
   ]
 }
