@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.70bd0546.css",
+    "main.css": "/static/css/main.ed807afb.css",
     "main.js": "/static/js/main.265e73d8.js",
     "static/media/nightclubs_cover.png": "/static/media/nightclubs_cover.7b1d9c06df208ee06440.png",
     "static/media/doctor_cover.png": "/static/media/doctor_cover.29506e1a4662d21f72ea.png",
@@ -21,11 +21,11 @@
     "static/media/Asset 7.svg": "/static/media/Asset 7.76a82b886061cacee6fa.svg",
     "static/media/Asset 17.svg": "/static/media/Asset 17.667f71404a991cdd47e9.svg",
     "index.html": "/index.html",
-    "main.70bd0546.css.map": "/static/css/main.70bd0546.css.map",
+    "main.ed807afb.css.map": "/static/css/main.ed807afb.css.map",
     "main.265e73d8.js.map": "/static/js/main.265e73d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.70bd0546.css",
+    "static/css/main.ed807afb.css",
     "static/js/main.265e73d8.js"
   ]
 }
