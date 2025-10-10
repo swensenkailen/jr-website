@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed807afb.css",
-    "main.js": "/static/js/main.265e73d8.js",
+    "main.css": "/static/css/main.62367511.css",
+    "main.js": "/static/js/main.73732b0c.js",
     "static/media/nightclubs_cover.png": "/static/media/nightclubs_cover.7b1d9c06df208ee06440.png",
+    "static/media/Joyla Red EPK Links Background.png": "/static/media/Joyla Red EPK Links Background.b8358e6f1bccdef7a860.png",
     "static/media/doctor_cover.png": "/static/media/doctor_cover.29506e1a4662d21f72ea.png",
-    "static/media/JoylaRed-PressPhoto-WebsiteHeader1.jpg": "/static/media/JoylaRed-PressPhoto-WebsiteHeader1.fc3fb28514abdeb51d94.jpg",
+    "static/media/JR-EPK-PressPhoto1-Expansion-FadeToBlack.png": "/static/media/JR-EPK-PressPhoto1-Expansion-FadeToBlack.4f4dd748150e35aab2d3.png",
+    "static/media/Joyla Red EPK Video Link Asset.png": "/static/media/Joyla Red EPK Video Link Asset.e03b0bdae2599e3e5bcc.png",
     "static/media/into_the_fade_cover.png": "/static/media/into_the_fade_cover.50fa447b2cc8f02f69b4.png",
     "static/media/black-texture-vertical.jpg": "/static/media/black-texture-vertical.57ea6ca199557a4ea8b4.jpg",
     "static/media/old_film_texture.mp4": "/static/media/old_film_texture.05d500eb6906eb5944ee.mp4",
     "static/media/LatinoGothic-VariableVariable.ttf": "/static/media/LatinoGothic-VariableVariable.80d67714104c0cf952d6.ttf",
+    "static/media/Joyla Red EPK Logo Link Asset - smaller size.png": "/static/media/Joyla Red EPK Logo Link Asset - smaller size.32cf388468da2dba7433.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Joyla_Red_EPK_Photo_Link_Asset.png": "/static/media/Joyla_Red_EPK_Photo_Link_Asset.f7f8b7991f5ecfb16c52.png",
     "static/media/FranklinGothicURWCondBook.ttf": "/static/media/FranklinGothicURWCondBook.3c040c58aeb374d3e09e.ttf",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -17,15 +21,16 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/FranklinGothicURWCondBookItalic.ttf": "/static/media/FranklinGothicURWCondBookItalic.1045d6f36052dc937ca5.ttf",
+    "static/media/linktree logo.png": "/static/media/linktree logo.ece5670ec52d1cad2ebc.png",
     "static/media/Asset 5.svg": "/static/media/Asset 5.b110df07032652ba4931.svg",
     "static/media/Asset 7.svg": "/static/media/Asset 7.76a82b886061cacee6fa.svg",
     "static/media/Asset 17.svg": "/static/media/Asset 17.667f71404a991cdd47e9.svg",
     "index.html": "/index.html",
-    "main.ed807afb.css.map": "/static/css/main.ed807afb.css.map",
-    "main.265e73d8.js.map": "/static/js/main.265e73d8.js.map"
+    "main.62367511.css.map": "/static/css/main.62367511.css.map",
+    "main.73732b0c.js.map": "/static/js/main.73732b0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed807afb.css",
-    "static/js/main.265e73d8.js"
+    "static/css/main.62367511.css",
+    "static/js/main.73732b0c.js"
   ]
 }
