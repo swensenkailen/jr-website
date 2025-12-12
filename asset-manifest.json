@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7da2c85d.css",
+    "main.css": "/static/css/main.96dee3ab.css",
     "main.js": "/static/js/main.fd9997ca.js",
     "static/media/nightclubs_cover.png": "/static/media/nightclubs_cover.7b1d9c06df208ee06440.png",
     "static/media/Joyla Red EPK Links Background.png": "/static/media/Joyla Red EPK Links Background.b8358e6f1bccdef7a860.png",
@@ -26,11 +26,11 @@
     "static/media/Asset 7.svg": "/static/media/Asset 7.76a82b886061cacee6fa.svg",
     "static/media/Asset 17.svg": "/static/media/Asset 17.667f71404a991cdd47e9.svg",
     "index.html": "/index.html",
-    "main.7da2c85d.css.map": "/static/css/main.7da2c85d.css.map",
+    "main.96dee3ab.css.map": "/static/css/main.96dee3ab.css.map",
     "main.fd9997ca.js.map": "/static/js/main.fd9997ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.7da2c85d.css",
+    "static/css/main.96dee3ab.css",
     "static/js/main.fd9997ca.js"
   ]
 }
